@@ -1,0 +1,5 @@
+ARG_ENABLE("errno", "for errno support", "no");
+
+if (PHP_ERRNO != "no") {
+    EXTENSION('errno', 'php_errno.c');
+}
